@@ -1,12 +1,11 @@
-# React + Vite
+# Задание #1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Функциональные требования по работе приложения:
+- при нажатии на кнопку Ввести новое происходит запрос значения у пользователя с помощью prompt();
+- значение должно состоять минимум из трех символов;
+- в случае если было введено менее 3 символов, на экране появляется сообщение с ошибкой;
+- если же было введено корректное значение, оно появляется на экране (в кавычках под заголовком);
+- если после этого еще раз нажать на кнопку Ввести новое, то снова произойдет запрос значения по правилам, описанным выше;
+- если нажать на кнопку Добавить в список, то текущее введенное значение добавится в список ниже, а также удалится из кавычек под заголовком;
+- кнопка Добавить в список заблокирована, если значение содержит менее 3 символов;
+- если в списке нет ни одного элемента, то показываем сообщение Нет добавленных элементов.
